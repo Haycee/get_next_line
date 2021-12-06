@@ -6,17 +6,21 @@
 /*   By: agirardi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 17:33:21 by agirardi          #+#    #+#             */
-/*   Updated: 2021/12/03 17:53:38 by agirardi         ###   ########lyon.fr   */
+/*   Updated: 2021/12/05 11:27:07 by agirardi         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
 
-char	*ft_strjoin(char *s1, char *s2, int i, int j)
+char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*str;
 	int		buff_size;
+	int		i;
+	int		j;
 
+	i = -1;
+	j = 0;
 	if (ft_check_nl(s2) != -1)
 		buff_size = ft_check_nl(s2) + 1;
 	else
@@ -31,10 +35,7 @@ char	*ft_strjoin(char *s1, char *s2, int i, int j)
 	{
 		str[i++] = s2[j++];
 		if (s2[j - 1] == '\n')
-		{
-			str[i] = '\n';
 			break ;
-		}
 	}
 	str[i] = '\0';
 	return (str);

@@ -6,7 +6,7 @@
 /*   By: agirardi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 09:21:29 by agirardi          #+#    #+#             */
-/*   Updated: 2021/12/03 18:10:01 by agirardi         ###   ########lyon.fr   */
+/*   Updated: 2021/12/05 11:17:13 by agirardi         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,8 @@
 
 char	*get_next_line(int fd);
 char	*get_line(int fd, char *line, char *buff);
-char	*ft_strjoin(char *s1, char *s2, int i, int j);
+char	*ft_strjoin(char *s1, char *s2);
 int		ft_strlen(char *str);
 int		ft_check_nl(char *buff);
-void	ft_save_rest(char *buff, char *buff_rest);
 
 #endif
